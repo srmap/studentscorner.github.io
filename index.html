@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Candidate Login</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://student.srmap.edu.in/srmapstudentcorner/resources/js/jquery-3.2.1.min.js"></script>
+        <script src="https://student.srmap.edu.in/srmapstudentcorner/resources/js/jquery-ui.min.js"></script>
+        <link href="https://student.srmap.edu.in/srmapstudentcorner/resources/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://student.srmap.edu.in/srmapstudentcorner/resources/css/jquery-ui.css" rel="stylesheet">
+        <style>
+            body {
+                background: url('http://srmap.edu.in/file/2017/05/Ariel-View-1.jpg') no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                -o-background-size: cover;
+                opacity: 0.9;
+                filter: alpha(opacity=75); /* For IE8 and earlier */
+            }
+        </style>
+        </head>
+        <body>
+        <div class="container-fluid">
+            <div class="panel-primary">
+                <div class="container-fluid" align="left" style="margin-top: 10px">
+                    <img src="https://student.srmap.edu.in/srmapstudentcorner/resources/images/rsz_college_logo.png" style="width:192px;height:69px;opacity:0.5;" alt="SRM Amaravathy" class="img-rounded"/>
+                </div>
+                <div class="col-md-6 col-md-offset-3">
+                              <div class="panel panel-primary" style="max-width: 75%;" align="left">
+                                  <div class="panel-heading form-group">
+                                      <b><font color="#FFFFFF">Student Login</font> </b>
+                                  </div>
+                                  <div class="panel-body">
+                                      <form action="main.html" id="frmSL" method="post">
+                                          <div class="form-group textbox-wrap">
+                                              <label for="exampleInputEmail1">Register Number</label> <input type="text" class="form-control" id="UserName" placeholder="Enter Register Number / Application Number" required="required">
+                                          </div>
+                                          <div class="form-group textbox-wrap" data-provide="datepicker">
+                                              <label for="exampleInputPassword1">Password</label> <input type="password" class="form-control" id="AuthKey" placeholder="Password" required="required">
+                                          </div>
+                                          <div class="form-group textbox-wrap">
+                                              <img src="https://student.srmap.edu.in/srmapstudentcorner/captchas">
+                                              <input type="text" class="form-control" value="" id="ccode" name="ccode" maxlength="5" placeholder="Enter Captcha Text" required="required">
+                                          </div>
+                                          <button type="submit" style="width: 100%; font-size:1.1em;" class="btn btn-large btn btn-success btn-lg btn-block" onclick="window.location.href='main.html'"><b>Login</b></button>
+                                          <input type="hidden" name="txtUserName" id="txtUserName">
+                                          <input type="hidden" name="txtAuthKey" id="txtAuthKey">
+                                      </form>
+                                      <!--<a href="/srmapstudentcorner/StudentPasswordReset">
+                                          <span style="float: right; color: #0000ff;text-align: right;cursor: pointer"><br>
+                                              &nbsp;&nbsp;&nbsp;Forget Password&nbsp;&nbsp;&nbsp;
+                                          </span>
+                                      </a> -->
+                                  </div>
+
+                                  <div style="color: #FF0000;text-align: center" id="divmsg">  </div>
+                                 
+                              </div>
+                          </div>
+                          </body>
+                      </html>
